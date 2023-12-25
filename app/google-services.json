@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "281996142874",
+    "project_id": "tstop-d9251",
+    "storage_bucket": "tstop-d9251.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281996142874:android:6fb2a0cbb81c0acada24a3",
+        "android_client_info": {
+          "package_name": "com.with.tstop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281996142874-tjclceokp7v7mqb3265ot9jt9o4u09u2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtGZy91z1EFgMtxtpQyAaT4np3819AXwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281996142874-tjclceokp7v7mqb3265ot9jt9o4u09u2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

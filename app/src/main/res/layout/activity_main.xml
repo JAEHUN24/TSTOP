@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/et_number"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|center"
+    android:orientation="vertical"
+    android:scrollbarSize="20dp"
+    android:scrollbarStyle="outsideInset"
+    android:visibility="visible"
+    tools:visibility="visible">
+
+    <com.naver.maps.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="fill_horizontal"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/calling"
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="550dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/cc">
+
+            <Button
+                android:id="@+id/yesb"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bc"
+                android:text="확인"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/nob"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bc"
+                android:text="취소"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:text="호출에 응하시겠습니까?"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/et_destination"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/textview_rounded_corner"
+            android:fadingEdge="horizontal|vertical"
+            android:hint="  주소를 입력하세요"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/bc"
+            android:backgroundTint="#24B04D"
+            android:text="검색"
+            android:textColor="#FEFEFE"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/route_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/ic_launcher_background"
+            android:drawableTint="#24B14D"
+            android:text="네비게이션 실행"
+            android:textColor="#FEFEFE" />
+
+        <TextView
+            android:id="@+id/CN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+             />
+
+    </com.naver.maps.map.MapView>
+</LinearLayout>
